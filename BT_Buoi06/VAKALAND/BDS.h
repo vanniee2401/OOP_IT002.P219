@@ -13,7 +13,7 @@ protected:
 
 public:
     virtual void Nhap();
-    virtual void Xuat();
+    void Xuat();
     bool Check(int thang, int nam);
     virtual float TinhThanhTien() = 0;
     virtual int LoaiGiaoDich() = 0;
@@ -26,7 +26,7 @@ private:
 
 public:
     void Nhap();
-    void Xuat() { BDS::Xuat(); };
+    void Xuat();
     float TinhThanhTien();
     int LoaiGiaoDich();
 };
@@ -39,7 +39,7 @@ private:
 
 public:
     void Nhap();
-    void Xuat() { BDS::Xuat(); };
+    void Xuat();
     float TinhThanhTien();
     int LoaiGiaoDich();
 };
@@ -52,7 +52,7 @@ private:
 
 public:
     void Nhap();
-    void Xuat() { BDS::Xuat(); };
+    void Xuat();
     float TinhThanhTien();
     int LoaiGiaoDich();
 };
