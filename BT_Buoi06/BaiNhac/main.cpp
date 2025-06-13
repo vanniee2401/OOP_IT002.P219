@@ -43,25 +43,27 @@ int main()
     cout << "Not nhac co cao do cao nhat la: ";
     switch (song[vitriCaoDoCaoNhat]->LayCaoDo())
     {
-    case "C":
+    case 0:
+        cout << "Khong co cao do.";
+    case 1:
         cout << "Not Do.";
         break;
-    case "D":
+    case 2:
         cout << "Not Re.";
         break;
-    case "E":
+    case 3:
         cout << "Not Mi.";
         break;
-    case "F":
+    case 4:
         cout << "Not Fa.";
         break;
-    case "G":
+    case 5:
         cout << "Not Sol.";
         break;
-    case "A":
+    case 6:
         cout << "Not La.";
         break;
-    case "B":
+    case 7:
         cout << "Not Si.";
         break;
     }

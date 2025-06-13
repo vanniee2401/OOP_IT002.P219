@@ -6,7 +6,7 @@ protected:
 public:
     virtual void Nhap();
     virtual bool LaDauLangDen();
-    virtual char LayCaoDo() = 0;
+    virtual int LayCaoDo() = 0;
 };
 
 class NotNhac : public KyHieu
@@ -16,12 +16,12 @@ private:
 
 public:
     void Nhap();
-    char LayCaoDo();
+    int LayCaoDo();
 };
 
 class DauLang
 {
 public:
     bool LaDauLangDen();
-    char LayCaoDo();
+    int LayCaoDo();
 }

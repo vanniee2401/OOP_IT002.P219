@@ -13,9 +13,9 @@ bool KyHieu::LaDauLangDen()
     return false;
 }
 
-char KyHieu::LayCaoDo()
+int KyHieu::LayCaoDo()
 {
-    return 'Z';
+    return 0;
 }
 
 void NotNhac::Nhap()
@@ -25,9 +25,22 @@ void NotNhac::Nhap()
     cin >> CaoDo;
 }
 
-char NotNhac::LayCaoDo()
+int NotNhac::LayCaoDo()
 {
-    return CaoDo;
+    if (CaoDo == 'C')
+        return 1;
+    if (CaoDo == 'D')
+        return 2;
+    if (CaoDo == 'E')
+        return 3;
+    if (CaoDo == 'F')
+        return 4;
+    if (CaoDo == 'G')
+        return 5;
+    if (CaoDo == 'A')
+        return 6;
+    if (CaoDo == 'B')
+        return 7;
 }
 
 bool DauLang::LaDauLangDen()
@@ -35,7 +48,7 @@ bool DauLang::LaDauLangDen()
     return true;
 }
 
-char DauLang::LayCaoDo()
+int DauLang::LayCaoDo()
 {
-    return 'Z';
+    return 0;
 }
