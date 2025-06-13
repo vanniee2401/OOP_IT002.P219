@@ -52,3 +52,22 @@ int main()
     }
     return 0;
 }
+
+istream &operator>>(istream &is, Money &a)
+{
+    is >> iEuro >> iCent;
+    a.iEuro += iCent / 100;
+    a.iCent %= 100;
+    return is;
+}
+
+Money &Money::operator++()
+{
+    iCent++;
+    if (iCent == 100)
+    {
+        iEuro += 1;
+        iCent = 0;
+    }
+    return *this;
+}
